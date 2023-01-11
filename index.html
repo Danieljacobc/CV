@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Daniel's 🔥 Website</title>
+    </head>
+    <body>
+        <!-- you can increase cell spacing with the syntax below-->
+        <table cellspacing ="20">
+            <tr>
+                <td> <img src="JacobContrerasPF.png" alt="JacobContrerasPF"> </td>
+                <td><h1>Daniel Contreras</h1>
+                    <p><em>The <strong>Baddest Mf'n programmer</strong> you know!</em></p>
+                    <p> I am a MMA fighter, aspiring Software engineer, and just a cool guy (; ! </p></td>
+            </tr>
+        </table>
+        <!-- below is how we enter an image into our html file:
+            <img src="_____" alt="_____">
+        note: 
+        - in 'src' we attatch the link to the image and in 'alt' we give the link a related name so google can use it as an alternate path.
+        - this only works if the program can ping the hosting websites servers, if the servers are down the image can't be downloaded or displayed resulting in an error.
+        - you can make the image available all the time if you download the image, place it in the same folder as the website, and paste image name (look on the left menu for example)
+        - you can also make another folder within the folder to put multiple images but it'll have to be put in img src as a path instead of a name
+        -->
+
+        <!-- 
+            <p> - enters a paragraph (requires opening and closing tags)
+            <i> or <em> - italicizes whats between opening and closing tags
+            <b> or <strong> - bolds whats between opening and closing tags
+        -->
+        <br>
+        <hr size="4" noshade>
+        <h3>Education</h3>
+        <!-- 
+            Remember:
+            <br> - allows you to break and start on a new line this comes in handy as opposed to the 'enter' key which will not work here (stand alone element)
+            <ul> - creates an unordered list (requires opening and closing)
+            <li> - gives the list a bullet (requires opening and closing)
+        -->
+        <p> <strong>Associates of Applied Science (AAS) | Lone Star College</strong>
+            <ul><em>
+                <li>3.9 / 4.0 GPA</li>
+
+                <!-- below is the syntax for how we hyperlink:
+
+                    <a href="https://...">Name</a>
+                -->
+                <li>Member of <strong><a href="https://www.ptk.org/">Phi Theta Kappa</a></strong> Honor Society</li>
+                <li>Member of <strong><a href="https://www.honorsociety.org/">Honor Society Foundation</a></strong></li>
+                <li>Accepted into the Honors College at Lone Star College</li>
+            </em></ul>
+        </p>
+
+        <p> <strong>Bachelors of Applied Technology (BAT) | Lone Star College</strong>
+            <ul><li><em>Still progressing alongside my Associates program.</em></li></ul>
+        </p>
+        <!-- by creating another .html file we can essentially create another page in our website, below we use href to give us a hyperlink to this next page -->
+        <br>
+        <hr size="4" noshade>
+        <h3>Work Experience</h3>
+        <!-- 
+            <table> - creates a table and ensures proper indentation (opening and closing tag)
+            <tr> - creates a table row for our data to go into (opening and closing tags)
+            <td> - where we input our data (opening and closing tags)
+
+                also note that tables have sections (thead, tbody, tfoot) - they all require open and closing tags to be able to edit within them 
+                <th> - gives us a table header (requires open and closing tags)
+                <table border="1"> - you can add a border to a table with this syntax in the opening table element (the number being the size)
+        -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Dates</th>
+                    <th>Job Title</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jan 2022 - Dec 2022</td>
+                    <td>Technical Customer Support Agent at Farmers Insurance</td>
+                </tr>
+                <tr>
+                    <td>Feb 2021 - Jan 2022</td>
+                    <td>Call Center Agent at Senture LLC</td>
+                </tr>
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+
+
+        <hr size="4" noshade>
+        <h3>Skills</h3>
+        <table cellspacing="15">
+                <tr>
+                    <td>Programming </td>
+                    <td>⭐⭐⭐⭐⭐ </td>
+                    <td>Customer Service</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td>Software Troubleshooting</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>Adaptability</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td>Microsoft Office</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>Software Logic</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+                <tr>
+                    <td>Complex Problem Solving</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                    <td>SQL</td>
+                    <td>⭐⭐⭐⭐⭐</td>
+                </tr>
+        </table>
+
+        <hr size="4" noshade>
+        <a href="hobbies.html">My Hobbies</a><br>
+        <a href="contact.html">Contact Me</a><br>
+        <a href="meetings.html">Schedule a Meeting</a>
+
+
+    </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a meeting</title>
+</head>
+<body>
+    <h1>Let's schedule a meeting!</h1>
+    <hr size="3" noshade>
+    <!-- creating this 'mailto:' action on the form, upon submitting the users mail application will popup to send the answers to the given address, 
+        for this we also must give a 'name' to the 'input' statements -->
+    <form action="mailto:danielcmma113@gmail.com" method="post" enctype="text/plain">
+        <div>
+                <tr>
+                <td><label for="name">What is your name?</label></td>
+                <td><input type="text" id="name" name="Yourname"> </td>
+        </div>       
+        <br>
+
+        <div>
+            <label for="start">When would you like our meeting to be?</label>
+            <input type="date" id="start" name="scheduledate" required>
+            <input type="time" id="start" name="scheduletime" min = "10:00" max="19:00" required>
+            <small>Office hours are from 10am to 7pm</small>
+        </div>
+        <br>
+
+        <div>
+            <label for="email">Enter your email address:</label>
+            <input type="email" id="email" name="YourEmail" required>
+        </div>
+
+        <br>
+        <div>
+            <!-- <textarea> defines how big a text box can be via rows and cols -->
+            <label for=notes>Any notes before our meeting?</label><small> (Optional)</small><br>
+            <textarea name="yourNotes" rows="10" cols="30"></textarea>
+        </div>
+        <br>
+        <input type="submit" name="Submit"><br>
+        <small>Mail application must be installed on device.</small>
+
+
+
+
+    </form>
+</body>
+</html>
